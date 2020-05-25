@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DayOne</title>
+    <title>Rails Day 1</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <!-- <a href="/link">ANCHOR TEXT</a> -->
+    <!-- link_to "ANCHOR TEXT", path -->
+    <%= link_to "Contact", contact_path %>
+    <%= link_to "About", about_us_path %>
+    <%= link_to "Home", root_path %>
     <%= yield %>
+    <footer>made with 💌 at le wagon</footer>
   </body>
 </html>

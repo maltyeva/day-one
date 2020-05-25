@@ -1,0 +1,15 @@
+<h1>This is my home page</h1>
+<h2><%= @greeting %></h2>
+<!-- get '/contact', to: "pages#contact", as: :contact -->
+<!-- action = path -->
+<!-- method = verb -->
+<form action="/" method="get">
+  <input type="text" name="member" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+<h4>You searched for <%= @member %></h4>
+<ul>
+  <% @staff.each do |staff|%>
+    <li><%= staff %></li>
+  <% end %>
+</ul>
